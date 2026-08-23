@@ -28,7 +28,7 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col bg-emerald-50/40 font-sans text-emerald-950">
         <Navbar onOpenAiAssistant={() => setIsAiModalOpen(true)} />
-        <AiAssistantModal isOpen={isAiModalOpen} onClose={() => setIsAiModalOpen(false)} />
+        <AIAssistantModal isOpen={isAiModalOpen} onClose={() => setIsAiModalOpen(false)} />
         <main className="flex-1">
           <AppRoutes />
         </main>
